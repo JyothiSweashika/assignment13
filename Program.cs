@@ -61,7 +61,7 @@ namespace Assignment14
 
         static void Main(string[] args)
         {
-            int[] arr = { 1, 2, 5, 4, 7, 6 };
+            int[] arr = { 5,6,8,9,10,11,45,76,89,56 };
             Console.WriteLine("array without bubble sort");
             Print(arr);
             Stopwatch stopwatch = new Stopwatch();
@@ -79,8 +79,8 @@ namespace Assignment14
             stopwatch.Stop();
             Console.WriteLine("array with Insertion sort");
             Print(arr);
-            Console.WriteLine($"ArraySize {arr.Length} Time Take {stopwatch.Elapsed.TotalMilliseconds} milliseconds");
-            Console.WriteLine($"ArraySize {arr.Length} Time Take {stopwatch1.Elapsed.TotalMilliseconds} milliseconds");
+            Console.WriteLine($"ArraySize {arr.Length} Time Take for bubble sort {stopwatch.Elapsed.TotalMilliseconds} milliseconds");
+            Console.WriteLine($"ArraySize {arr.Length} Time Take for Insertion sort {stopwatch1.Elapsed.TotalMilliseconds} milliseconds");
 
 
             Console.ReadLine();
